@@ -1,0 +1,861 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #ffa402 1%, #fe5eab 100%); }
+
+html,
+body {
+  height: 100%; }
+
+label {
+  line-height: 1.15 !important;
+  text-transform: none !important;
+  color: #575962; }
+
+.paddingTop_0 {
+  padding-top: 0 !important; }
+
+.left_0 {
+  left: 0 !important; }
+
+.notFound {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 260px;
+  font-size: 40px;
+  text-align: center; }
+  .notFound .text {
+    font-size: 20px; }
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: lightgreen; }
+
+input:focus, textarea:focus, div:focus, button:focus {
+  outline: none; }
+
+.backGroundColorGrey {
+  background-color: gray; }
+
+.backGroundColorGreen {
+  background-color: lightgreen; }
+
+.backGroundColorRed {
+  background-color: red; }
+
+.backGroundColorOrange {
+  background-color: orange; }
+
+.backGroundColorBlue {
+  background-color: lightblue; }
+
+.backGroundColorPrimary {
+  background-color: #fff !important; }
+
+.backGroundColorPurple {
+  background-color: purple !important; }
+
+.app {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.appMainDiv {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; }
+
+@keyframes drawerAnimation {
+  0% {
+    margin-left: -163px; }
+  100% {
+    margin-left: 0px; } }
+
+@keyframes drawerAnimationOff {
+  0% {
+    margin-left: 0px; }
+  100% {
+    margin-left: -163px; } }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+
+.animationShake {
+  -webkit-animation: shake 1s infinite linear;
+  -moz-animation: shake 1s infinite linear;
+  animation: shake 1s infinite ease; }
+
+.appLeftDrawer {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.2s ease; }
+  .appLeftDrawer:hover {
+    margin-left: 0px;
+    -webkit-animation: drawerAnimation 0.4s ease;
+    -moz-animation: drawerAnimation 0.4s ease;
+    animation: drawerAnimation 0.4s ease; }
+    .appLeftDrawer:hover .closedDrawerNotification {
+      display: none; }
+
+.appLeftDrawer_open {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.2s ease;
+  margin-left: 0px;
+  -webkit-animation: drawerAnimation 0.4s ease;
+  -moz-animation: drawerAnimation 0.4s ease;
+  animation: drawerAnimation 0.4s ease;
+  position: relative;
+  display: inline-flex; }
+  .appLeftDrawer_open .closedDrawerNotification {
+    display: none !important; }
+  .appLeftDrawer_open .menuToggleButtonDiv {
+    left: 220px; }
+
+.appLeftDrawer_close {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.4s ease;
+  position: relative;
+  display: inline-flex; }
+  .appLeftDrawer_close .menuToggleButtonDiv {
+    left: 57px; }
+
+.menuToggleButtonDiv {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  padding: 10px;
+  width: 50px;
+  opacity: 0.5;
+  transition: 0.4s ease; }
+  .menuToggleButtonDiv:hover {
+    opacity: 1;
+    cursor: pointer; }
+  .menuToggleButtonDiv .menuToggleButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #212529; }
+  .menuToggleButtonDiv .icon {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+    text-align: center;
+    color: #ffa402; }
+
+.appPage {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.appPage_open {
+  width: calc(100% - 220px);
+  margin: 0;
+  padding: 0; }
+
+.appPage_close {
+  width: calc(100% - 220px + 163px);
+  margin: 0;
+  padding: 0; }
+
+.backMainDiv {
+  width: 100px;
+  margin: auto;
+  text-align: left;
+  margin-left: 15px;
+  padding: 15px; }
+  .backMainDiv:hover .backIcon {
+    color: #ffa402; }
+  .backMainDiv:hover .backLabel {
+    color: #ffa402; }
+
+.backIconDiv {
+  margin: auto;
+  text-align: center;
+  display: inline-block; }
+
+.backIcon {
+  color: #fff;
+  font-size: 20px; }
+
+.backLabelDiv {
+  margin: auto;
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px; }
+
+.backLabel {
+  color: #fff;
+  font-size: 20px;
+  text-align: left; }
+
+.errorTextDiv {
+  width: 100%;
+  line-height: 1;
+  margin: auto;
+  text-align: center; }
+
+.error {
+  color: red;
+  font-size: 12px; }
+
+.inputButton {
+  background: linear-gradient(135deg, #ffa402 1%, #fe5eab 100%);
+  cursor: pointer;
+  min-width: 100px;
+  padding: 7px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 13px;
+  margin: 10px; }
+
+.buttonContainer {
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  margin: 10px; }
+
+.hyperLinks {
+  font-size: 13px;
+  padding: 10px;
+  color: #0000EE; }
+  .hyperLinks:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
+.tableActionButtons {
+  min-width: 30px;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 10px; }
+
+.logoImage {
+  width: 200px; }
+
+form {
+  background: #fff; }
+
+.formButtonCantainer {
+  width: 100%; }
+
+.login {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 100px; }
+  .login .headerDiv {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .login .headerLabel {
+    font-size: 25px;
+    color: #fff;
+    text-align: center; }
+  .login .detailsMainDiv {
+    margin: auto;
+    width: 35%;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px; }
+  .login .loginMainDiv {
+    display: block;
+    width: 90%;
+    visibility: visible;
+    margin: 5%; }
+  .login .rigesterMainDiv {
+    display: block;
+    width: 90%;
+    visibility: visible;
+    margin: 5%; }
+  .login .logoutMainDiv {
+    display: block;
+    width: 90%;
+    visibility: visible;
+    margin: 5%; }
+  .login .hide {
+    display: none;
+    visibility: hidden; }
+  .login .labelDiv {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 5px; }
+  .login .label {
+    font-size: 14px;
+    text-align: left; }
+  .login .labelMessageSent {
+    font-size: 16px;
+    color: #686868;
+    text-align: center; }
+  .login .labelNotRegDiv {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px; }
+  .login .labelNotReg {
+    font-size: 11px;
+    color: lightgreen;
+    text-align: center;
+    text-decoration: underline; }
+  .login .inputDiv {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px; }
+  .login input {
+    width: 100%;
+    margin-bottom: 0px;
+    margin: 0;
+    border: 0;
+    height: auto;
+    border-bottom: 1px solid #686868;
+    border-radius: 0;
+    padding: 1px;
+    font-size: 12px;
+    text-align: left; }
+  .login input:focus {
+    border-bottom: 1px solid lightgreen;
+    caret-color: lightgreen; }
+  .login .buttonDiv {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px; }
+  .login .button {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: lightgreen;
+    border: none;
+    padding: 10px;
+    width: 100%; }
+  .login .googlebutton {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: red;
+    border: none;
+    padding: 10px;
+    width: 100%; }
+  .login .facebookbutton {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: blue;
+    border: none;
+    padding: 10px;
+    width: 100%; }
+  .login .linkedINbutton {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: #0077b5;
+    border: none;
+    padding: 10px;
+    width: 100%; }
+  .login .selectInput {
+    width: 100%;
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px; }
+
+.signUp {
+  margin-top: 50px; }
+
+.loading {
+  position: relative;
+  top: 40%;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+  border: 0;
+  padding: 15px;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2); }
+  .loading .LabelDiv {
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px; }
+  .loading .label {
+    font-size: 16px;
+    color: #686868;
+    text-align: center; }
+  .loading .indicatorDiv {
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background-color: #fff;
+  display: block;
+  z-index: 999;
+  box-shadow: 2px -5px 8px 3px #000; }
+  .header .headerMainDiv {
+    display: inline-flex;
+    width: 95%;
+    text-align: center;
+    margin: 15px 2.5%; }
+  .header .headerLogoDiv {
+    width: 5%;
+    margin: auto;
+    text-align: center; }
+  .header .headerLogo {
+    width: 100px;
+    margin: auto; }
+  .header .headerLabelDiv {
+    width: 15%;
+    margin: auto;
+    text-align: left;
+    margin-left: 10px; }
+  .header .headerLabel {
+    font-size: 20px;
+    color: #ffa402;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .header .headerTitleDiv {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-left: 10px; }
+    .header .headerTitleDiv:hover {
+      cursor: pointer; }
+      .header .headerTitleDiv:hover .notificationDropdown {
+        display: block; }
+  .header .notificationLabelDiv {
+    width: 50px;
+    position: relative;
+    margin: auto;
+    margin-right: calc(100% - 20%); }
+    .header .notificationLabelDiv:hover {
+      cursor: pointer; }
+      .header .notificationLabelDiv:hover .notificationDropdown {
+        display: block; }
+  .header .badgeDiv {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -35px;
+    margin-top: -7px;
+    opacity: 0.75; }
+  .header .headerTitle {
+    font-size: 14px;
+    color: #fff;
+    text-align: left; }
+    .header .headerTitle:hover {
+      cursor: pointer; }
+      .header .headerTitle:hover .notificationDropdown {
+        display: block; }
+  .header .headerUserNameDiv {
+    width: calc(30%);
+    text-align: right;
+    margin: auto; }
+    .header .headerUserNameDiv:hover {
+      cursor: pointer; }
+  .header .headerUserName {
+    font-size: 14px;
+    color: #fff;
+    text-align: right; }
+    .header .headerUserName:hover {
+      cursor: pointer; }
+  .header .headerUserImageDiv {
+    width: 10%;
+    text-align: center;
+    margin: auto; }
+    .header .headerUserImageDiv:hover {
+      cursor: pointer; }
+      .header .headerUserImageDiv:hover .dropDown {
+        display: block;
+        box-shadow: 1px 1px 6px -1px #000; }
+  .header .headerUserImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; }
+    .header .headerUserImage:hover {
+      cursor: pointer; }
+  .header .dropDown {
+    width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    right: 40px;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  .header .dropDownItemDiv {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin: auto;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .header .dropDownItemDiv:hover {
+      cursor: pointer; }
+      .header .dropDownItemDiv:hover .dropDownMenuLabel {
+        color: #ffa402; }
+  .header .dropDownMenuLabel {
+    font-size: 14px;
+    color: #ffa402;
+    text-align: center; }
+    .header .dropDownMenuLabel:hover {
+      cursor: pointer; }
+  .header .notificationDropdown {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 600;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%; }
+  .header .notificationsMainDiv {
+    width: calc(100% - 4%);
+    margin: 2%;
+    display: block;
+    text-align: center; }
+  .header .noNotificationsDiv {
+    margin-top: 135px;
+    display: block; }
+  .header .noNotificationsLabel {
+    font-size: 14px;
+    color: #fff;
+    text-align: center; }
+  .header .notificationsCard {
+    width: calc(100% - 20px);
+    border-radius: 8px;
+    margin-bottom: 4px;
+    padding: 10px;
+    text-align: left;
+    display: block; }
+  .header .notificationCardRead {
+    opacity: 0.8;
+    background-color: #c6c6c6; }
+  .header .notificationTopRow {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 4px; }
+  .header .notificationIconMainDiv {
+    width: 50px;
+    border-radius: 8px;
+    background-color: wheat;
+    overflow: hidden; }
+  .header .notificationIconDiv {
+    width: 100%;
+    height: 50px; }
+  .header .notificationIcon {
+    width: 50px;
+    height: 50px; }
+  .header .notificationDetailsDiv {
+    width: calc(100% - 70px);
+    margin: auto;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px; }
+  .header .notificationLabel {
+    font-size: 13px;
+    font-weight: 100;
+    color: #fff;
+    text-align: left; }
+  .header .notificationStatusDiv {
+    width: 100%;
+    display: inline-flex; }
+  .header .notificationType {
+    width: 50%; }
+  .header .notificationDate {
+    width: 50%;
+    text-align: right; }
+  .header .notificationTypeLabel {
+    font-size: 13px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left; }
+  .header .notificationReadAllButtonMainDiv {
+    width: 100%;
+    margin: 10px auto;
+    text-align: right; }
+  .header .notificationReadAllButtonDiv {
+    width: 100%;
+    margin: auto;
+    text-align: right; }
+  .header .readAllButton {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: lightgreen;
+    border: none;
+    padding: 10px; }
+
+.drawer {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #212529;
+  display: block;
+  z-index: 100;
+  line-height: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-top: 64px; }
+  .drawer .drawerMainItem {
+    width: 80%;
+    text-align: right;
+    margin: auto;
+    padding: 10%;
+    cursor: pointer; }
+    .drawer .drawerMainItem:hover .drawerItemLabel {
+      color: #ffa402; }
+    .drawer .drawerMainItem:hover .drawerIcon {
+      color: #ffa402; }
+  .drawer .drawerMainItem_selected .drawerItemLabel {
+    color: #ffa402; }
+  .drawer .drawerMainItem_selected .drawerIcon {
+    color: #ffa402; }
+  .drawer .statusIconDiv {
+    display: inline-block;
+    text-align: right;
+    margin: auto;
+    margin-right: 10px; }
+  .drawer .statusIcon {
+    font-size: 16px;
+    color: #a5a3a4; }
+  .drawer .drawerItemLabelDiv {
+    display: inline-block;
+    text-align: right;
+    margin: auto;
+    margin-right: 10px; }
+  .drawer .drawerItemLabel {
+    font-size: 15px;
+    color: #fff;
+    text-align: right;
+    text-transform: capitalize;
+    font-weight: 400; }
+  .drawer .drawerIconDiv {
+    width: 40px;
+    display: inline-block;
+    text-align: right;
+    margin: auto; }
+  .drawer .drawerIcon {
+    font-size: 16px;
+    color: #fff; }
+  .drawer .notificationDiv {
+    background-color: #cb041a;
+    border-radius: 26px;
+    padding: 0px 5px;
+    margin: auto;
+    text-align: center; }
+  .drawer .notificationLabel {
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    line-height: 2;
+    margin: auto; }
+  .drawer .closedDrawerNotification {
+    display: block;
+    position: absolute;
+    top: 260px;
+    right: 30px;
+    background-color: #cb041a;
+    border-radius: 26px;
+    padding: 0px 5px;
+    margin: auto;
+    text-align: center; }
+
+.home {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 70px;
+  overflow: hidden;
+  overflow-y: auto; }
+  .home .usersMainDiv {
+    width: 94%;
+    padding: 3%;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center; }
+    .home .usersMainDiv .userCardDiv {
+      margin: 8px;
+      width: calc(100% / 3 - 16px); }
+
+.userCard {
+  border-radius: 4px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 15px; }
+  .userCard .photoMainDiv {
+    width: 55px;
+    padding-right: 15px; }
+    .userCard .photoMainDiv .intialsText {
+      background-color: #fff;
+      color: #ffa402;
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 2;
+      border-radius: 50%; }
+    .userCard .photoMainDiv .photo {
+      background-color: #fff;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: fill; }
+  .userCard .detailsMainDiv {
+    width: calc(100% - 55px);
+    display: block; }
+    .userCard .detailsMainDiv .userName {
+      width: 100%;
+      color: #ffa402;
+      font-size: 16px;
+      text-align: left;
+      line-height: 1.4; }
+    .userCard .detailsMainDiv .otherDetails {
+      width: 100%;
+      color: #fff;
+      font-size: 14px;
+      text-align: left;
+      line-height: 1.4; }
+
+.leadsMainDiv {
+  display: block;
+  width: 90%;
+  visibility: visible;
+  margin: 5%; }
+  .leadsMainDiv .tabelContainer {
+    width: 100%;
+    overflow-x: auto; }
+    .leadsMainDiv .tabelContainer .jss106:nth-of-type(even) {
+      background-color: white; }
+  .leadsMainDiv .voteReasonBox {
+    min-width: 500px; }
+  .leadsMainDiv .heading {
+    text-align: center;
+    padding: 20px 0px 30px;
+    font-size: 20px;
+    color: #34495e; }
+  .leadsMainDiv .noData {
+    text-align: center;
+    padding: 50px; }
+    .leadsMainDiv .noData select {
+      padding: 5px;
+      width: 50%;
+      border: #ccc;
+      background: #fff;
+      border-radius: 5px; }
+  .leadsMainDiv .leadFormDiv {
+    display: block;
+    margin: 10%; }
+    .leadsMainDiv .leadFormDiv .inputContainer {
+      width: 48%;
+      display: inline-block;
+      padding: 1%; }
+      @media only screen and (max-width: 768px) {
+        .leadsMainDiv .leadFormDiv .inputContainer {
+          width: 100%; } }
+      .leadsMainDiv .leadFormDiv .inputContainer .labelDiv {
+        font-size: 15px;
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: 0 0 10px 0; }
+      .leadsMainDiv .leadFormDiv .inputContainer .inputDiv input {
+        overflow: visible;
+        width: 95%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 6px; }
+    .leadsMainDiv .leadFormDiv .buttonDiv {
+      text-align: center;
+      padding: 10px; }
+      .leadsMainDiv .leadFormDiv .buttonDiv button {
+        min-width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: #34495e;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer; }
+  .leadsMainDiv .addButtonConatiner button {
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 20px 0 20px;
+    cursor: pointer; }
+
+.emailFeilds {
+  padding: 0 0 15px 20px;
+  display: inline-block;
+  width: 100%; }
+  .emailFeilds label {
+    width: 5%;
+    display: inline-block; }
+  .emailFeilds input {
+    width: 90%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px; }

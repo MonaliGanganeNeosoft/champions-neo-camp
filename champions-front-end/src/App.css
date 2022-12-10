@@ -1,0 +1,125 @@
+.App {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 100px;
+}
+.headerDiv{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.headerLabel{
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+.detailsMainDiv{
+  margin: auto;
+  width: 35%;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.loginMainDiv{
+  display: block;
+  width: 90%;
+  visibility: visible;
+  margin: 5%;
+}
+.rigesterMainDiv{
+  display: block;
+  width: 90%;
+  visibility: visible;
+  margin: 5%;
+}
+.logoutMainDiv{
+  display: block;
+  width: 90%;
+  visibility: visible;
+  margin: 5%;
+}
+.hide{
+  display: none;
+  visibility: hidden;
+}
+.labelDiv{
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.label{
+  font-size: 14px;
+  color: lightgreen;
+  text-align: left
+}
+.labelNotRegDiv{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.labelNotReg{
+  font-size: 11px;
+  color: lightgreen;
+  text-align: center;
+  text-decoration: underline;
+}
+.inputDiv{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px; 
+}
+input{
+  width: 100%;
+  margin-bottom: 0px;
+  margin: 0;
+  border: 0;
+  height: auto;
+  border-bottom: 1px solid #686868;
+  border-radius: 0;
+  padding: 1px;
+  font-size: 12px;
+  text-align: left;
+}
+input:focus{
+  border-bottom: 1px solid lightgreen;
+  caret-color: lightgreen;
+}
+
+.buttonDiv{
+  width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.button{
+    font-size:12px;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius: 4px;
+    background:lightgreen;
+    border:none;
+    padding: 10px;
+    width: 100%;
+}
+.googlebutton{
+  font-size:12px;
+  color:#fff;
+  text-transform:uppercase;
+  border-radius: 4px;
+  background:red;
+  border:none;
+  padding: 10px;
+  width: 100%;
+}
+
+
+
+

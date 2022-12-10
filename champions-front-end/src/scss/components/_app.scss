@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #ffa402 1%,#fe5eab 100%);
+}
+html, 
+body {
+    height: 100%;
+}
+
+label{
+  line-height: 1.15 !important;
+  text-transform: none !important; 
+  color: #575962;
+  //font-family: "Open Sans" !important;
+}
+
+.paddingTop_0{
+  padding-top: 0 !important;
+}
+.left_0{
+  left: 0 !important;
+}
+
+.notFound{
+  width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 260px;
+    font-size: 40px;
+    text-align: center;
+    .text{
+      font-size: 20px;
+    }
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+input:focus, textarea:focus, div:focus, button:focus {
+  outline: none;
+}
+
+  $primary-color: #fff;
+  $secondary-color: #ffa402;
+  $drawer-color: #212529;
+
+  .backGroundColorGrey{
+    background-color: gray;
+  }
+  .backGroundColorGreen{
+      background-color: lightgreen;
+  }
+  .backGroundColorRed{
+      background-color: red;
+  }
+  .backGroundColorOrange{
+      background-color: orange;
+  }
+  .backGroundColorBlue{
+      background-color: lightblue;
+  }
+  .backGroundColorPrimary{
+    background-color: $primary-color !important;
+  }
+  .backGroundColorPurple{
+    background-color: purple !important;
+  }
+
+
+
+.app{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.appMainDiv{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+@keyframes drawerAnimation {
+  0%      { margin-left: -163px;}
+  100%    { margin-left: 0px; }
+}
+@keyframes drawerAnimationOff {
+  0%      { margin-left: 0px;}
+  100%    { margin-left: -163px; }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.animationShake{
+  -webkit-animation: shake 1s infinite linear;    
+  -moz-animation: shake 1s infinite linear;
+  animation: shake 1s infinite ease;
+}
+
+.appLeftDrawer{
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: $drawer-color;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;    
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.2s ease;
+  &:hover{
+    margin-left: 0px;
+    -webkit-animation: drawerAnimation 0.4s ease;    
+    -moz-animation: drawerAnimation 0.4s ease;
+    animation: drawerAnimation 0.4s ease;
+
+    .closedDrawerNotification{
+      display: none;
+  }
+  }
+}
+.appLeftDrawer_open{
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: $drawer-color;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;    
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.2s ease;
+  margin-left: 0px;
+  -webkit-animation: drawerAnimation 0.4s ease;    
+  -moz-animation: drawerAnimation 0.4s ease;
+  animation: drawerAnimation 0.4s ease;
+  position: relative;
+  display: inline-flex;
+  .closedDrawerNotification{
+      display: none !important;
+  }
+  .menuToggleButtonDiv{
+    left: 220px;
+  }
+}
+.appLeftDrawer_close{
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  background-color: $drawer-color;
+  margin-left: -163px;
+  -webkit-animation: drawerAnimationOff 0.4s ease;    
+  -moz-animation: drawerAnimationOff 0.4s ease;
+  animation: drawerAnimationOff 0.4s ease;
+  position: relative;
+  display: inline-flex;
+  .menuToggleButtonDiv{
+    left: 57px;
+  }
+}
+
+.menuToggleButtonDiv{
+  position: fixed;
+  display: block;
+  bottom: 0;
+  padding: 10px;
+  width: 50px;
+  opacity: 0.5;
+  transition: 0.4s ease;
+  &:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .menuToggleButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $drawer-color;
+  }
+  .icon{
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px; 
+    text-align: center;
+    color: $secondary-color;
+  }
+}
+
+.appPage{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.appPage_open{
+  width: calc(100% - 220px);
+  margin: 0;
+  padding: 0;
+}
+.appPage_close{
+  width: calc(100% - 220px + 163px);
+  margin: 0;
+  padding: 0;
+}
+
+.backMainDiv{
+  width: 100px;
+  margin: auto;
+  text-align: left;
+  margin-left: 15px; 
+  padding: 15px;
+  &:hover {
+    //background-color: $secondary-color; 
+    .backIcon{
+      color: $secondary-color;
+    }
+    .backLabel{
+      color: $secondary-color;
+    }
+  }
+}
+.backIconDiv{
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+.backIcon{
+  color: $primary-color;
+  font-size: 20px;
+}
+.backLabelDiv{
+  margin: auto;
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px; 
+}
+.backLabel{
+  color: $primary-color;
+  font-size: 20px;
+  text-align: left;
+}
+
+.errorTextDiv{
+  width: 100%;
+  line-height: 1;
+  margin: auto;
+  text-align: center;
+}
+.error{
+  color: red;
+  font-size: 12px;
+}
+.inputButton {
+  background: linear-gradient(135deg, #ffa402 1%, #fe5eab 100%);
+  cursor: pointer;
+  min-width: 100px;
+  padding: 7px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 13px;
+  margin: 10px;
+}
+.buttonContainer {
+      text-align: center;
+      margin: auto;
+      display: inline-block;
+      margin: 10px;
+}
+.hyperLinks {
+  font-size: 13px;
+  padding: 10px;
+  color: #0000EE;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+} 
+
+.tableActionButtons {
+  min-width: 30px;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.logoImage {
+  width: 200px; 
+}
+
+form {
+  background: $primary-color;
+}
+
+.formButtonCantainer {
+  width: 100%;
+}

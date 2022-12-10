@@ -1,0 +1,48 @@
+.userCard{
+    //width: 100%;
+    border-radius: 4px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    .photoMainDiv{
+        width: 55px;
+        padding-right: 15px;
+        .intialsText{
+            background-color: $primary-color;
+            color: $secondary-color;
+            height: 40px;
+            width: 40px;
+            //margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 2;
+            border-radius: 50%;
+        }
+        .photo{
+            background-color: $primary-color;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: fill;
+        }
+    }
+    .detailsMainDiv{
+        width: calc(100% - 55px);
+        display: block;
+        .userName{
+            width: 100%;
+            color: $secondary-color;
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.4;
+        }
+        .otherDetails{
+            width: 100%;
+            color: $primary-color;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+    }
+}

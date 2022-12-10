@@ -1,0 +1,29 @@
+.loading{
+    position: relative;
+    top: 40%;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    border: 0;
+    padding: 15px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    .LabelDiv{
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .label{
+        font-size: 16px;
+        color: #686868;
+        text-align: center;
+    }
+    .indicatorDiv{
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+  }

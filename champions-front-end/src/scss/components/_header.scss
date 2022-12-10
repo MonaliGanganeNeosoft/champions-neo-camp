@@ -1,0 +1,265 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    margin: 0;
+    background-color: $primary-color;
+    display: block;
+    z-index: 999;
+    box-shadow: 2px -5px 8px 3px #000;
+    .headerMainDiv{
+        display: inline-flex;
+        width: 95%;
+        text-align: center;
+        margin: 15px 2.5%;
+    }
+    .headerLogoDiv{
+        width: 5%;
+        margin: auto;
+        text-align: center;
+    }
+    .headerLogo{
+        width: 100px;
+        margin: auto;
+    }
+    .headerLabelDiv{
+        width: 15%;
+        margin: auto;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .headerLabel{
+        font-size: 20px;
+        color: $secondary-color;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .headerTitleDiv{
+        width: 50%;
+        text-align: left;
+        margin: auto;
+        margin-left: 10px;
+        &:hover{
+            .notificationDropdown{
+                display: block;
+            }
+            cursor: pointer;
+        }
+    }
+    .notificationLabelDiv{
+        width: 50px;
+        position: relative;
+        margin: auto;
+        margin-right: calc(100% - 20%);
+        &:hover{
+            .notificationDropdown{
+                display: block;
+            }
+            cursor: pointer;
+        }
+        
+    }
+    .badgeDiv{
+        position: absolute;
+        right: 0;
+        top:0;
+        margin-right: -35px;
+        margin-top: -7px;
+        opacity: 0.75;
+    }
+    .headerTitle{
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+        &:hover{
+            .notificationDropdown{
+                display: block;
+            }
+            cursor: pointer;
+        }
+    }
+    .headerUserNameDiv{
+        width:calc(30%);
+        text-align: right;
+        margin: auto;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .headerUserName{
+        font-size: 14px;
+        color: #fff;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .headerUserImageDiv{
+        width: 10%;
+        text-align: center;
+        margin: auto;
+        &:hover{
+            cursor: pointer;
+            .dropDown{
+                display: block;
+                box-shadow: 1px 1px 6px -1px #000;
+            }
+        }
+    }
+    .headerUserImage{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        &:hover{
+            cursor: pointer;
+            
+        }
+    }
+    .dropDown{
+        width: 150px;
+        padding: 10px;
+        background-color: $primary-color;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        right: 40px;
+        border-radius: 5%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .dropDownItemDiv{
+        width: 100%;
+        padding:10px 0;
+        text-align: center;
+        margin: auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:hover{
+            cursor: pointer;
+            .dropDownMenuLabel{
+                color : $secondary-color;
+            }
+        }
+    }
+    .dropDownMenuLabel{
+        font-size: 14px;
+        color: $secondary-color;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .notificationDropdown{
+        position: absolute;
+        display: none;
+        width: 400px;
+        height: 300px;
+       // margin-top: 25%;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: $primary-color;
+        z-index: 600;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+    .notificationsMainDiv{
+        width: calc(100% - 4%);
+        margin: 2%;
+        display: block;
+        text-align: center;
+    }
+    .noNotificationsDiv{
+        margin-top: 135px;
+        display: block;
+    }
+    .noNotificationsLabel{
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+    .notificationsCard{
+        width: calc(100% - 20px);
+        border-radius: 8px;
+        margin-bottom: 4px;
+        padding: 10px;
+        text-align: left;
+        display: block; 
+    }
+    .notificationCardRead{
+        opacity: 0.8;
+        background-color: #c6c6c6;
+    }
+    .notificationTopRow{
+        display: inline-flex;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .notificationIconMainDiv{
+        width: 50px;
+        border-radius: 8px;
+        background-color: wheat; 
+        overflow: hidden;
+    }
+    .notificationIconDiv{
+        width: 100%;
+        height: 50px;
+    }
+    .notificationIcon{
+        width: 50px;
+        height: 50px;
+    }
+    .notificationDetailsDiv{
+        width: calc(100% - 70px);
+        margin: auto;
+        text-align: left;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .notificationLabel{
+        font-size:13px;
+        font-weight: 100;
+        color: #fff; 
+        text-align: left;
+    }
+    .notificationStatusDiv{
+        width: 100%;
+        display: inline-flex;
+    }
+    .notificationType{
+        width: 50%;
+    }
+    .notificationDate{
+        width: 50%;
+        text-align: right;
+    }
+    .notificationTypeLabel{
+        font-size:13px;
+        font-weight: 900;
+        color: #fff; 
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .notificationReadAllButtonMainDiv{
+        width: 100%;
+        margin: 10px auto;
+        text-align: right;
+    }
+    .notificationReadAllButtonDiv{
+        width: 100%;
+        margin: auto;
+        text-align: right;
+    }
+    .readAllButton{
+        font-size:12px;
+        color:#fff;
+        text-transform:uppercase;
+        border-radius: 4px;
+        background:lightgreen;
+        border:none;
+        padding: 10px;
+    }
+
+}

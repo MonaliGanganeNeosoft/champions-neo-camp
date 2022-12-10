@@ -1,0 +1,121 @@
+.leadsMainDiv{
+    display: block;
+    width: 90%;
+    visibility: visible;
+    margin: 5%;
+    .tabelContainer {
+        width: 100%;
+        overflow-x: auto;
+        // background: #fff;
+        .jss106:nth-of-type(even) {
+            background-color: white;
+        }
+    }
+    // button {
+    //     cursor: pointer;
+    //     border: #ccc;
+    //     color: #fff;
+    //     background: #34495e;
+    //     padding: 5px;
+    //     border-radius: 3px;
+    //     margin: 0 0 0 10px;
+    //     &:hover {
+    //         background: #3f5973;
+    //     }
+    // }
+    .voteReasonBox {
+        min-width: 500px;
+    }
+    .heading {
+        text-align: center;
+        padding: 20px 0px 30px;
+        font-size: 20px;
+        color: #34495e;
+    }
+    .noData {
+        text-align: center;
+        padding: 50px;
+        select {
+            padding: 5px;
+            width: 50%;
+            border: #ccc;
+            background: #fff;
+            border-radius: 5px;
+        
+        }
+    }
+    .leadFormDiv {
+        display: block;
+        margin: 10%;
+        .inputContainer {
+            width: 48%;
+            display: inline-block;
+            padding: 1%;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .labelDiv {
+                font-size: 15px;
+                // color: #34495e;
+                text-align: left;
+                text-transform: capitalize;
+                font-weight: 400;
+                padding: 0 0 10px 0;
+            }
+            .inputDiv {
+                input {
+                    overflow: visible;
+                    width: 95%;
+                    padding: 6px;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                }
+
+            }
+        }
+        .buttonDiv {
+            text-align: center;
+            padding: 10px;
+            button {
+                min-width: 100px;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                background: #34495e;
+                color: #fff;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    .addButtonConatiner {
+        button {
+            min-width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            margin: 20px 0 20px;
+            cursor: pointer;
+        }
+    }
+  }
+
+  .emailFeilds {
+    padding: 0 0 15px 20px;
+    display: inline-block;
+    width: 100%;
+    label {
+        width: 5%;
+        display: inline-block;
+    }
+    input {
+        width: 90%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 3px;
+    }
+  }
+  
+

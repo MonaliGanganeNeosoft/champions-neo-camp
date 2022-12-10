@@ -1,0 +1,23 @@
+.home{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 70px;
+    overflow: hidden;
+    overflow-y: auto;
+    .usersMainDiv{
+        width: 94%;
+        padding: 3%;
+        padding-bottom: 5px;
+        padding-top: 15px; 
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+        .userCardDiv{
+            margin: 8px;
+            width: calc(100% / 3 - 16px);
+        }
+    }
+}
